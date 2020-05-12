@@ -1,0 +1,70 @@
+.wrapper {
+    margin: 0 auto;
+    width: 700px;
+}
+.input-text{
+    width: 100%;
+    margin-bottom: 40px;
+}
+.keyboard{
+    width: 700px;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: absolute;
+    top: 65px;
+    z-index: 10;
+    right: calc(50% - 350px);
+    background-color: white;
+}
+.key{
+    width: 36px;
+    height: 40px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    background-color: #CCCCFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    font-size: 17px;
+    color: 	#000000;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: ease-in-out 0.2s;
+}
+.key--big{
+    width: 100px;
+}
+.key--win{
+    background: url(./../assets/win.svg) center center no-repeat;
+    background-color: #CCCCFF;
+}
+
+.key--menu{
+    background: url(./../assets/menu.svg) center center no-repeat;
+    background-color: #CCCCFF;
+}
+.key--sw{
+    background: url(./../assets/switch__ln.png) center center no-repeat;
+    background-color: #CCCCFF;
+}
+.key--space{
+    width: 385px;
+}
+.key--active{
+    transition: ease-in-out 0.2s;
+    background-color: 	#009999;
+    border-radius: 15px;
+}
+.clearfix{
+    display: block;
+    width: 100%;
+    clear: both;
+}
+.keyboard--show {
+    display: flex;
+
+    @media(max-width: 767px) {
+        display: none;
+    }
+}
